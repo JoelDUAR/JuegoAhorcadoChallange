@@ -533,7 +533,7 @@ footer{
     }
 }
 
-@media only screen and (max-width: 375px){
+@media only screen and (max-width: 575px){
     header{
         padding: 2vh 0 0 3vw;
     }
