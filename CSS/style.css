@@ -229,10 +229,11 @@ main{
 
 #dibujo{
     position: relative;
-    width: 294px;
-    height: 391px;
-    margin-top: 4vh;
+    width: 15.3vw;
+    height: 40vh;
+    margin-top: 8vh;
    /*  visibility: hidden; */
+   border: 1px solid #000000
 }
 
 .detalle-dibujo{
@@ -241,29 +242,26 @@ main{
 }
 
 #soporte{
-    width: 177px;
-    height: 5px;
+    position: absolute;
+    width: 60%;
+    height: 1%;
     margin-left: 3vw;
     margin-bottom: -0.7vh;
-    position: absolute;
-    z-index: 1;
 }
 
 #soporte-vertical{
-    width: 5px;
-    height: 50px;
-    margin-left: 12vw;
-    margin-bottom: -0.7vh;
     position: absolute;
-    z-index: 0;
+    width: 1.5%;
+    height: 15%;
+    margin-left: 12vw;
 }
 
 #cuerpo{
-    width: 5px;
-    height: 110px;
-    margin-left: 12vw;
-    margin-top: 11vh;
     position: absolute;
+    width: 1.8%;
+    height: 30%;
+    margin-left: 78.5%;
+    margin-top: 36%;
 }
 
 #cuerpo, #brazo-derecho, #pierna-derecha, #brazo-izquierdo, #pierna-izquierda{
@@ -271,53 +269,69 @@ main{
 }
 
 #brazo-derecho, #pierna-derecha, #brazo-izquierdo, #pierna-izquierda{
-    width: 5px;
-    height: 72px;
-    margin-left: 13vw;
-    margin-top: 13vh;
     position: absolute;
+    width: 1.5%;
+    height: 7.5vh;
+    margin-left: 85%;
+    margin-top: 36%;
     transform: matrix(-0.87, 0.5, 0.5, 0.87, 0, 0);
 }
 
 #pierna-derecha, #pierna-izquierda{
-    margin-top: 22vh; 
+    position: absolute;
+    margin-top: 71%; 
 }
 
 #brazo-izquierdo, #pierna-izquierda{
  transform: rotate(30deg);
- margin-left: 11vw;
+ margin-left: 72%;
 }
 
 #cabeza{
-    width: 63px;
-    height: 63px;
-    margin-left: 10.45vw;
-    margin-top: 5vh;
     position: absolute;
+    width: 21.5%;
+    height: 17.2%;
+    margin-left: 69%;
+    margin-top: 15.5%;
     border-radius: 50%;
 }
 #cabeza2{
-    width: 50px;
-    height: 50px;
-    margin-left: 10.9vw;
-    margin-top: 5.84vh;
     position: absolute;
+    width: 17.6%;
+    height: 14.1%;
+    margin-left: 71.3%;
+    margin-top: 17.8%;
     border-radius: 50%;
     background-color: #E5E5E5;
 }
 
 #mastil{
-    width: 5px;
-    height: 294px;
-    margin-left: 3vw;
-    margin-bottom: -1vh;
     position: absolute;
+    width: 1.5%;
+    height: 79%;
+    margin-left: 18%;
+    margin-bottom: -1vh;
 }
 
+#soporte-derecho, #soporte-izquierdo{
+    position: absolute;
+    width: 1.5%;
+    height: 7.5vh;
+    margin-left: 24%;
+    margin-top: 76%;
+    transform: matrix(-0.87, 0.5, 0.5, 0.87, 0, 0);
+}
+
+#soporte-izquierdo{
+    transform: rotate(30deg);
+    margin-left: 12.5%;
+   }
+
 #base{
-    width: 294px;
-    height: 5px;
-    margin-top: 31vh;
+    position: absolute;
+    width: 15.2vw;
+    height: 1.5%;
+    margin-top: 98%;
 }
 
 #letras-correctas{
@@ -406,4 +420,242 @@ footer{
     font-size: 80%;
     font-weight: bold;
     font-style: italic;
+}
+
+@media only screen and (max-width: 1024px){
+    header{
+        padding: 5vh 0 0 4vw;
+    }
+
+    .btn-inicio{
+        width: 70vw;
+    }
+
+    .popup{
+        width: 65vw;
+        height: 55vh;
+    }
+    
+    .palabra-nueva{
+        font-size:200%;
+        margin: 5rem auto 0 auto;
+    }
+    
+    .contenedor-aviso{
+        width: 20vw;
+        height: 2vh;
+        margin: 26vh 0 1.5vh 0;
+        padding: 0;
+    }
+    
+    .btn-guardar, .btn-cancelar{
+        width: 30vw;
+        height: 4vh;
+    }
+
+    #dibujo{
+        width: 29%;
+        height: 50%;
+        margin-top: 4vh;
+    }
+
+    #soporte{
+        margin-left: 19%;
+    }
+
+    #soporte-vertical{
+        margin-left: 79%;
+    }
+    
+    #cuerpo{
+        margin-left: 79%;
+        margin-top: 40%;
+    }
+
+    #brazo-derecho, #pierna-derecha, #brazo-izquierdo, #pierna-izquierda{
+        margin-left: 84%;
+        margin-top: 38%;
+    }
+    
+    #brazo-derecho, #pierna-izquierda{
+        margin-top: 72%; 
+        
+    }
+    
+    #brazo-izquierdo, #pierna-izquierda{
+     margin-left: 74%;
+    }
+    
+    #cabeza{
+        margin-left: 69.3%;
+        margin-top: 19%;
+    }
+    #cabeza2{
+        margin-left: 71.7%;
+        margin-top: 21.2%;
+    }
+    
+    #mastil{
+        margin-left: 18%;
+    }
+
+    #soporte-derecho, #soporte-izquierdo{
+        margin-left: 24%;
+        margin-top: 79%;
+    }
+    
+    #soporte-izquierdo{
+        transform: rotate(30deg);
+        margin-left: 12.5%;
+       }
+    
+    #base{
+        width: 294px;
+        height: 5px;
+        margin-top: 98%;
+    }
+    
+
+    #contenedor-botones{
+        margin-top: 9.5vh;
+    }
+
+    #btn-nuevo, #btn-desistir{
+        height: 47px;
+    }
+    
+    #btn-nuevo{
+        margin-right: 1vw;
+    }
+    
+    footer{
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 375px){
+    header{
+        padding: 2vh 0 0 3vw;
+    }
+
+    .btn-inicio{
+        width: 85vw;
+        height: 10vh;
+        margin-bottom: 3vh;
+    }
+
+    .btn-agregar{
+        width: 70vw;
+        height: 6vh;
+    }
+
+    .popup{
+        width: 90vw;
+        height: 55vh;
+    }
+    
+    .palabra-nueva{
+        font-size: 152%;
+    }
+    
+    .contenedor-aviso{
+        width: 30vw;
+        height: 2vh;
+        margin: 24vh 0 1.5vh 2vw;
+        padding: 0;
+    }
+    
+    .btn-guardar, .btn-cancelar{
+        width: 80vw;
+        height: 4vh;
+    }
+
+    #dibujo{
+        width: 85%;
+        height: 50%;
+        margin-top: 8vh;
+    }
+
+    #soporte{
+        margin-left: 19%;
+    }
+
+    #soporte-vertical{
+        margin-left: 79%;
+    }
+    
+    #cuerpo{
+        margin-left: 79%;
+        margin-top: 34%;
+    }
+
+    #brazo-derecho, #pierna-derecha, #brazo-izquierdo, #pierna-izquierda{
+        margin-left: 84%;
+        margin-top: 33%;
+    }
+    
+    #brazo-derecho, #pierna-izquierda{
+        margin-top: 64%;
+    }
+    
+    #brazo-izquierdo, #pierna-izquierda{
+     margin-left: 74%;
+    }
+    
+    #cabeza{
+        margin-left: 69%;
+        margin-top: 16%;
+    }
+    #cabeza2{
+        margin-left: 71.3%;
+        margin-top: 18%;
+    }
+    
+    #mastil{
+        height: 86%;
+        margin-left: 18%;
+    }
+
+    #soporte-derecho, #soporte-izquierdo{
+        margin-left: 24%;
+        margin-top: 80%;
+    }
+    
+    #soporte-izquierdo{
+        transform: rotate(30deg);
+        margin-left: 12.5%;
+       }
+    
+    #base{
+        width: 294px;
+        height: 5px;
+        margin-top: 98%;
+    }
+
+    #letras-correctas{
+        margin-top: 3vh;
+    }
+    
+    #letras-incorrectas{
+        margin-top: 0.5vh;
+    }  
+
+    #contenedor-botones{
+        display: block;
+        width: 90vw;
+        margin-top: 3.5vh;
+    }
+
+    #btn-nuevo, #btn-desistir{
+        width: 90vw;
+        height: 6vh;
+        margin-top: 1.5vh;
+    }
+    
+    footer{
+        margin-top: 2vh;
+        text-align: center;
+        font-size: 75%;
+    }
+
 }
