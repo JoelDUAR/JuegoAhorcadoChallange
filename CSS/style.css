@@ -1,0 +1,409 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #E5E5E5;
+}
+
+.invisible{
+    display: none;
+}
+
+.texto{
+    font-family: 'Inter', sans-serif;
+}
+
+.btn-azul{
+    border-radius: 24px;
+    background: #0A3871;
+    color: #FFFFFF;
+    border: none;
+}
+
+.btn-secundario{
+    border-radius: 24px;
+    background: #E5E5E5;
+    color: #0A3871;
+    border: 1px solid #0A3871;
+}
+
+header{
+    width: 97vw;
+    height: 6vh;
+    padding: 3vh 0 0 3vw;
+}
+
+main{
+    display: block;
+}
+
+#container{
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 84.5vh;
+}
+
+.visible{
+    display: flex;
+}
+
+.container-button{
+    width: 17vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.btn-inicio, .btn-agregar{
+    cursor: pointer;
+}
+
+.btn-inicio{
+    width: 217px;
+    height:105px;
+    margin-bottom: 38px;
+    font-size: 110%;
+}
+
+.btn-inicio:hover{
+    background: #0a387174;
+    transition: 0.3s ease-in-out;
+    transform: scale(1.2);
+    box-shadow: 5px 5px 4px 3px rgb(0,0,0);
+}
+
+.btn-inicio:active{
+    background: #710a0a74;
+    transition: 0.3s ease-in-out;
+    transform: scale(0.9);
+    box-shadow: 5px 5px 4px 3px #3f0000d3;
+}
+
+.btn-agregar{
+    width: 210px;
+    height:67px;
+    font-size: 110%;
+}
+.btn-agregar:hover{
+    background: #0a387124;
+    transition: 0.3s ease-in-out;
+    transform: scale(1.2);
+    box-shadow: 5px 5px 4px 3px rgb(0,0,0);
+}
+.btn-agregar:active{
+    background: #710a0a74;
+    transition: 0.3s ease-in-out;
+    transform: scale(0.9);
+    box-shadow: 5px 5px 4px 3px #3f0000d3;
+    color: white;
+}
+
+.fondo-oscuro{
+    display: flex;
+    visibility: hidden;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.523);
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.fondo-oscuro.active{
+    visibility: visible;
+}
+
+.popup{
+    width: 35vw;
+    height: 35vh;
+    background: #E5E5E5;
+    box-shadow: 0px 0px 10px 10px rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    text-align: center;
+    transition: 0.8s ease all;
+    transform: scale(0);
+    opacity: 0;
+}
+
+.popup.active{
+    opacity: 1;
+    transform: scale(1);
+}
+
+.btn-cerrar-popup{
+    display: block;
+    text-align: right;
+    margin: 0.5rem;
+}
+
+.palabra-nueva{
+    background: #E5E5E5;;
+    font-size:200%;
+    text-align: center;
+    margin: 2rem;
+    border: none;
+    font-weight: bold;
+    font-style: italic;
+}
+
+.palabra-nueva::placeholder {
+    color: #0A3871;
+    font-style: italic;
+}
+
+.contenedor-aviso{
+    width: 10vw;
+    height: 2vh;
+    margin: 12vh 0 0.5vh 8.5vw;
+    padding: 0;
+}
+
+.atencion{
+    width:0.8rem;
+    height:0.8rem;
+}
+
+.aviso{
+    font-size:60%;
+    margin-left: 0.3rem;
+}
+
+.btn-guardar, .btn-cancelar{
+    width: 7vw;
+    height: 4vh;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.btn-guardar{
+    background-image: linear-gradient(to right, #0A3871 50%, #710a0a 50%);
+    background-size: 200%;
+    background-repeat: no-repeat;
+    background-position: left;
+}
+
+.btn-guardar:hover{
+    transition: 1s ease;
+    background-position: right;
+}
+
+.btn-guardar:active{
+    background: yellow;
+    color: black;
+    border: 1px solid #000000
+}
+
+.btn-cancelar{
+    background-image: linear-gradient(to right, #E5E5E5 50%, #000000 50%);
+    background-size: 200%;
+    background-repeat: no-repeat;
+    background-position: left;
+}
+
+.btn-cancelar:hover{
+    transition: 1s ease;
+    background-position: right;
+    color: white;
+}
+
+.btn-cancelar:active{
+    background: red;
+}
+
+#container2{
+    
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+    height: 84.5vh;
+}
+
+#base, #mastil, #soporte, #soporte-vertical, #cabeza, #cuerpo, #brazo-derecho, #brazo-izquierdo, #pierna-derecha, #pierna-izquierda, #cartel-victoria, #cartel-game-over {
+    border: 1px solid #0A3871;
+}
+
+#dibujo{
+    position: relative;
+    width: 294px;
+    height: 391px;
+    margin-top: 4vh;
+   /*  visibility: hidden; */
+}
+
+.detalle-dibujo{
+    background: #0A3871;
+    border: none;
+}
+
+#soporte{
+    width: 177px;
+    height: 5px;
+    margin-left: 3vw;
+    margin-bottom: -0.7vh;
+    position: absolute;
+    z-index: 1;
+}
+
+#soporte-vertical{
+    width: 5px;
+    height: 50px;
+    margin-left: 12vw;
+    margin-bottom: -0.7vh;
+    position: absolute;
+    z-index: 0;
+}
+
+#cuerpo{
+    width: 5px;
+    height: 110px;
+    margin-left: 12vw;
+    margin-top: 11vh;
+    position: absolute;
+}
+
+#cuerpo, #brazo-derecho, #pierna-derecha, #brazo-izquierdo, #pierna-izquierda{
+    border-radius: 8px;
+}
+
+#brazo-derecho, #pierna-derecha, #brazo-izquierdo, #pierna-izquierda{
+    width: 5px;
+    height: 72px;
+    margin-left: 13vw;
+    margin-top: 13vh;
+    position: absolute;
+    transform: matrix(-0.87, 0.5, 0.5, 0.87, 0, 0);
+}
+
+#pierna-derecha, #pierna-izquierda{
+    margin-top: 22vh; 
+}
+
+#brazo-izquierdo, #pierna-izquierda{
+ transform: rotate(30deg);
+ margin-left: 11vw;
+}
+
+#cabeza{
+    width: 63px;
+    height: 63px;
+    margin-left: 10.45vw;
+    margin-top: 5vh;
+    position: absolute;
+    border-radius: 50%;
+}
+#cabeza2{
+    width: 50px;
+    height: 50px;
+    margin-left: 10.9vw;
+    margin-top: 5.84vh;
+    position: absolute;
+    border-radius: 50%;
+    background-color: #E5E5E5;
+}
+
+#mastil{
+    width: 5px;
+    height: 294px;
+    margin-left: 3vw;
+    margin-bottom: -1vh;
+    position: absolute;
+}
+
+#base{
+    width: 294px;
+    height: 5px;
+    margin-top: 31vh;
+}
+
+#letras-correctas{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 70px;
+    color: rgb(109, 221, 126);
+    margin-top: 7vh;
+}
+
+#letra{
+    font-size:300%;
+}
+
+#renglon{
+    width: 50px;
+    height: 4px;
+    background: #0A3871;
+}
+
+#letras-incorrectas{
+    height: 30px;
+    color: red;
+    font-size: 150%;
+    margin-top: 1vh;
+}
+
+#letra-incorrecta{
+    font-size:150%;
+}
+
+#contenedor-botones{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 688px;
+    height: 67px;
+    margin-top: 11vh;
+}
+
+#btn-nuevo, #btn-desistir{
+    width: 332px;
+    height: 67px;
+}
+
+#btn-nuevo{
+    margin-right: 1vw;
+}
+
+#btn-nuevo:hover{
+    transform: scale(0.8);
+    transition: 0.3s ease-in;
+    background: #0a387174;
+    box-shadow: 5px 5px 4px 3px rgb(0,0,0);
+}
+
+#btn-nuevo:active{
+    background: #710a0a74;
+    transition: 0.3s ease-in-out;
+    transform: scale(1);
+    box-shadow: 5px 5px 4px 3px #3f0000d3;
+}
+
+#btn-desistir:hover{
+    background: #0a387124;
+    transition: 0.3s ease-in-out;
+    transform: scale(0.8);
+    box-shadow: 5px 5px 4px 3px rgb(0,0,0);
+}
+
+#btn-desistir:active{
+    background: #710a0a74;
+    transition: 0.3s ease-in-out;
+    transform: scale(1);
+    box-shadow: 5px 5px 4px 3px #3f0000d3;
+    color: white;
+}
+
+footer{
+    display:flex;
+    width: 100vw;
+    height: 4vh;
+    justify-content: center;
+    align-items:center;
+    font-size: 80%;
+    font-weight: bold;
+    font-style: italic;
+}

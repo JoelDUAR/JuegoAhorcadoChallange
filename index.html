@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./CSS/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/730791ff8d.js" crossorigin="anonymous"></script>
+    <title>Juego del Ahorcado</title>
+</head>
+<body>
+    <header>
+        <img src="./assets/Logo.png" alt="Logo">
+    </header>
+    <main>
+        <section id="container" class="visible">
+            <div class="container-button">
+                <button class="btn-inicio btn-azul texto">Iniciar juego</button>
+                <button class="btn-agregar btn-secundario texto">Agregar nueva palabra</button>
+            </div>
+            <div class="fondo-oscuro">
+                <div class="popup">
+                    <a href="#" class="btn-cerrar-popup"><i class="fa-solid fa-xmark"></i></a>
+                    <input type="text" class="palabra-nueva" placeholder="Ingrese una palabra" autofocus>
+                    <div class="contenedor-aviso">
+                        <img src="./assets/Vector.png" alt="Atención" class="atencion"><span class="aviso texto">Solo Mayúsculas</span>
+                    </div>
+                    <div>
+                        <button class="btn-guardar texto btn-azul">Guardar y empezar</button>
+                        <button class="btn-cancelar texto btn-secundario">Cancelar</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="container2" class="invisible">
+            <div id="dibujo">
+                <div id="soporte" class="detalle-dibujo"></div>
+                <div id="soporte-vertical" class="detalle-dibujo"></div>
+                <div id="brazo-derecho" class="detalle-dibujo"></div>
+                <div id="brazo-izquierdo" class="detalle-dibujo"></div>
+                <div id="pierna-derecha" class="detalle-dibujo"></div>
+                <div id="pierna-izquierda" class="detalle-dibujo"></div>
+                <div id="cuerpo" class="detalle-dibujo"></div>
+                <div id="cabeza" class="detalle-dibujo"></div>
+                <div id="cabeza2" class="detalle-dibujo"></div>
+                <div id="mastil" class="detalle-dibujo"></div>
+                <div id="base" class="detalle-dibujo"></div>
+            </div>
+            <div id="letras-correctas">
+                    <p id="letra" class="texto">A</p>
+                    <div id="renglon"></div>
+            </div>
+            <div id="letras-incorrectas">
+                <p id="letra-incorrecta" class="texto">A</p>
+            </div>
+            <div id="contenedor-botones">
+                <button id="btn-nuevo" class="btn-azul">Nuevo juego</button>
+                <button id="btn-desistir" class="btn-secundario">Desistir</button>
+            </div>
+            <div id="cartel-victoria" class="invisible">
+                <h1>¡¡¡Felicidades!!!</h1>
+                        <h2>¡¡Ganaste!!</h2>
+            <div id="cartel-game-over" class="invisible">
+                <h1>¡¡Fin del Juego!!</h1>
+                <h2>¿Lo intentas de nuevo?</h2>
+            </div>
+        </section>
+    </main>
+    <footer><p>&copy Copyright - Desarrollo por Joel Dupraz Ardiles - Challange N°2 - Oracle Next Education</p></footer>
+
+<script src="./JS/jugar.js"></script>    
+<script src="./JS/agregar.js"></script>
+<script src="./JS/nuevo-juego.js"></script>
+<script src="./JS/desistir.js"></script>
+</body>
+</html>
