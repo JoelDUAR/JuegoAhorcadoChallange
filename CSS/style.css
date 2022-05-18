@@ -119,8 +119,8 @@ main{
 }
 
 .popup{
-    width: 35vw;
-    height: 35vh;
+    width: 60vw;
+    height: 60vh;
     background: #E5E5E5;
     box-shadow: 0px 0px 10px 10px rgba(0, 0, 0, 0.5);
     border-radius: 5px;
@@ -159,7 +159,7 @@ main{
 .contenedor-aviso{
     width: 10vw;
     height: 2vh;
-    margin: 12vh 0 0.5vh 8.5vw;
+    margin: 24vh 0 4vh 14vw;
     padding: 0;
 }
 
@@ -174,8 +174,8 @@ main{
 }
 
 .btn-guardar, .btn-cancelar{
-    width: 7vw;
-    height: 4vh;
+    width: 14vw;
+    height: 6vh;
     border-radius: 10px;
     cursor: pointer;
 }
@@ -259,9 +259,9 @@ main{
 #cuerpo{
     position: absolute;
     width: 1.8%;
-    height: 30%;
+    height: 40%;
     margin-left: 78.5%;
-    margin-top: 36%;
+    margin-top: 30%;
 }
 
 #cuerpo, #brazo-derecho, #pierna-derecha, #brazo-izquierdo, #pierna-izquierda{
@@ -273,34 +273,34 @@ main{
     width: 1.5%;
     height: 7.5vh;
     margin-left: 85%;
-    margin-top: 36%;
+    margin-top: 30%;
     transform: matrix(-0.87, 0.5, 0.5, 0.87, 0, 0);
 }
 
 #pierna-derecha, #pierna-izquierda{
     position: absolute;
-    margin-top: 71%; 
+    margin-top: 66%; 
 }
 
 #brazo-izquierdo, #pierna-izquierda{
  transform: rotate(30deg);
- margin-left: 72%;
+ margin-left: 72.5%;
 }
 
 #cabeza{
     position: absolute;
-    width: 21.5%;
+    width: 18.5%;
     height: 17.2%;
-    margin-left: 69%;
-    margin-top: 15.5%;
+    margin-left: 70%;
+    margin-top: 15%;
     border-radius: 50%;
 }
 #cabeza2{
     position: absolute;
-    width: 17.6%;
+    width: 15.4%;
     height: 14.1%;
-    margin-left: 71.3%;
-    margin-top: 17.8%;
+    margin-left: 72%;
+    margin-top: 17%;
     border-radius: 50%;
     background-color: #E5E5E5;
 }
@@ -308,7 +308,7 @@ main{
 #mastil{
     position: absolute;
     width: 1.5%;
-    height: 79%;
+    height: 99%;
     margin-left: 18%;
     margin-bottom: -1vh;
 }
@@ -331,7 +331,7 @@ main{
     position: absolute;
     width: 15.2vw;
     height: 1.5%;
-    margin-top: 98%;
+    margin-top: 95%;
 }
 
 #letras-correctas{
@@ -374,8 +374,8 @@ main{
 }
 
 #btn-nuevo, #btn-desistir{
-    width: 332px;
-    height: 67px;
+    width: 45vw;
+    height: 10vh;
 }
 
 #btn-nuevo{
@@ -432,13 +432,12 @@ footer{
     }
 
     .popup{
-        width: 65vw;
+        width: 75vw;
         height: 55vh;
     }
     
     .palabra-nueva{
-        font-size:200%;
-        margin: 5rem auto 0 auto;
+        width: 90%;
     }
     
     .contenedor-aviso{
@@ -555,7 +554,8 @@ footer{
     }
     
     .palabra-nueva{
-        font-size: 152%;
+        width: 90vw;
+        font-size: 102%;
     }
     
     .contenedor-aviso{
