@@ -482,7 +482,7 @@ footer{
     }
 }
 
-@media only screen and (max-width: 475px){
+@media only screen and (max-width: 575px){
     header{
         padding: 2vh 0 0 3vw;
     }
@@ -504,8 +504,9 @@ footer{
     }
     
     .palabra-nueva{
-        width: 90vw;
+        width: 90%;
         font-size: 102%;
+        margin: 10% 0
     }
     
     .contenedor-aviso{
@@ -520,11 +521,12 @@ footer{
         height: 4vh;
     }
 
+    .btn-guardar{
+        margin-bottom: 4%;
+    }
+
     #dibujo{
         margin-top: 8vh;
-    }
-    #cabeza{
-        
     }
 
     #letras-correctas{
@@ -548,6 +550,7 @@ footer{
     }
     
     footer{
+        margin-top: 2%;
         text-align: center;
         font-size: 75%;
     }
