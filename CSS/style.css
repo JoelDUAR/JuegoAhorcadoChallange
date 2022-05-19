@@ -3,10 +3,6 @@
     padding: 0;
 }
 
-#container, #container2, header, footer {
-    border: 1px solid #000000
-}
-
 body {
     background: #E5E5E5;
 }
@@ -197,7 +193,7 @@ main{
 }
 
 .btn-guardar:hover{
-    transition: 1s ease;
+    transition: 0.5s ease;
     background-position: right;
 }
 
@@ -215,7 +211,7 @@ main{
 }
 
 .btn-cancelar:hover{
-    transition: 1s ease;
+    transition: 0.5s ease;
     background-position: right;
     color: white;
 }
@@ -225,7 +221,6 @@ main{
 }
 
 #container2{
-    
     flex-direction: column;
     align-items: center;
     width: 100vw;
@@ -241,7 +236,6 @@ main{
     width: 300px;
     height: 600px;
    /*  visibility: hidden; */
-   border: 1px solid #000000
 }
 
 .detalle-dibujo{
@@ -380,6 +374,7 @@ main{
 #btn-nuevo, #btn-desistir{
     width: 332px;
     height: 60px;
+    cursor: pointer;
 }
 
 #btn-nuevo{
@@ -426,7 +421,7 @@ footer{
     font-style: italic;
 }
 
-@media only screen and (max-width: 1024px){
+@media only screen and (min-width: 768px) and (max-width: 1024px){
     header{
         padding: 5% 0 0 4%;
     }
@@ -447,7 +442,7 @@ footer{
     .contenedor-aviso{
         width: 20vw;
         height: 2vh;
-        margin: 26vh 0 1.5vh 0;
+        margin: 26vh 0 1.5vh 3.5vw;
         padding: 0;
     }
     
@@ -468,9 +463,20 @@ footer{
     #contenedor-botones{
         margin-top: 9.5vh;
     }
+    
+    #letras-correctas{
+        margin-top:4vh;
+        font-size:120%;
+    }
+    
+    #letras-incorrectas{
+        margin-top:1vh;
+        font-size:190%;
+    }
 
     #btn-nuevo, #btn-desistir{
         height: 47px;
+        margin-top: 2vh;
     }
     
     #btn-nuevo{
@@ -482,7 +488,7 @@ footer{
     }
 }
 
-@media only screen and (max-width: 575px){
+@media only screen and (min-width: 320px) and (max-width: 767px){
     header{
         padding: 2vh 0 0 3vw;
     }
@@ -500,20 +506,19 @@ footer{
 
     .popup{
         width: 90vw;
-        height: 55vh;
+        height: 63vh;
     }
     
     .palabra-nueva{
         width: 90%;
         font-size: 102%;
-        margin: 10% 0
+        margin: 10% 0 11% 0;
     }
     
     .contenedor-aviso{
         width: 30vw;
         height: 2vh;
         margin: 24vh 0 1.5vh 2vw;
-        padding: 0;
     }
     
     .btn-guardar, .btn-cancelar{
@@ -526,27 +531,31 @@ footer{
     }
 
     #dibujo{
-        margin-top: 8vh;
+        height:370px;
+        margin-top: 6vh;
     }
 
     #letras-correctas{
-        margin-top: 3vh;
+        margin-top: 4vh;
     }
     
     #letras-incorrectas{
-        margin-top: 0.5vh;
-    }  
-
+        margin: 1vh auto;
+    }
+    
     #contenedor-botones{
-        display: block;
-        width: 90vw;
-        margin-top: 3.5vh;
+        width: 97vw;
+        height: 15vh;
+        margin: 0.5vh auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 
     #btn-nuevo, #btn-desistir{
-        width: 90vw;
-        height: 6vh;
-        margin-top: 1.5vh;
+        width: 97%;
+        height: 7vh;
+        margin: 0.5vh auto
     }
     
     footer{
