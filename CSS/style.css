@@ -154,11 +154,19 @@ main{
     border: none;
     font-weight: bold;
     font-style: italic;
+    cursor: pointer;
 }
 
 .palabra-nueva::placeholder {
     color: #0A3871;
     font-style: italic;
+}
+
+.mensaje-error{
+    color: red;
+    width: auto;
+    height: 1vh;
+    list-style: none;
 }
 
 .contenedor-aviso{
@@ -227,139 +235,17 @@ main{
     height: 84.5vh;
 }
 
-#base, #mastil, #soporte, #soporte-vertical, #cabeza, #cuerpo, #brazo-derecho, #brazo-izquierdo, #pierna-derecha, #pierna-izquierda, #cartel-victoria, #cartel-game-over {
+ #cartel-victoria, #cartel-game-over {
     border: 1px solid #0A3871;
 }
+/* 
+#canvas{
+    width: 80vw;
+    height: 70vh;
+} */
 
-#dibujo{
-    position: relative;
-    width: 300px;
-    height: 600px;
-   /*  visibility: hidden; */
-}
-
-.detalle-dibujo{
-    background: #0A3871;
-    border: none;
-}
-
-#soporte{
-    position: absolute;
-    width: 178px;
-    height: 5px;
-    margin-left: 60px;
-}
-
-#soporte-vertical{
-    position: absolute;
-    width: 5px;
-    height: 50px;
-    margin-left: 240px;
-}
-
-#cabeza{
-    position: absolute;
-    width: 63px;
-    height: 63px;
-    margin-left: 207.5px;
-    margin-top: 52px;
-    background:  #E5E5E5;
-    border-radius: 50%;
-    border: 5px solid #0A3871
-}
-
-#cuerpo{
-    position: absolute;
-    width: 5px;
-    height: 135px;
-    margin-left: 240px;
-    margin-top: 122px;
-}
-
-#cuerpo, #brazo-derecho, #pierna-derecha, #brazo-izquierdo, #pierna-izquierda{
-    border-radius: 8px;
-}
-
-#brazo-derecho, #pierna-derecha, #brazo-izquierdo, #pierna-izquierda{
-    position: absolute;
-    width: 5px;
-    height: 72px;
-    margin-top: 118px;
-    transform: matrix(-0.87, 0.5, 0.5, 0.87, 0, 0);
-}
-
-#brazo-derecho, #pierna-derecha{
-    margin-left: 258px;
-}
-
-#pierna-derecha, #pierna-izquierda{
-    margin-top: 248px;    
-}
-
-#brazo-izquierdo, #pierna-izquierda{
-    transform: rotate(30deg);
-    margin-left: 222px;
-}
-
-#mastil{
-    position: absolute;
-    width: 5px;
-    height: 360px;
-    margin-left: 53px;
-}
-
-#soporte-derecho, #soporte-izquierdo{
-    position: absolute;
-    width: 5px;
-    height: 75px;
-    margin-top: 296px;
-    transform: matrix(-0.87, 0.5, 0.5, 0.87, 0, 0);
-}
-
-#soporte-derecho{
-    margin-left: 73px;
-}
-
-#soporte-izquierdo{
-    transform: rotate(30deg);
-    margin-left: 34px;
-   }
-
-#base{
-    position: absolute;
-    width: 294px;
-    height: 5px;
-    margin-top: 362px;
-}
-
-#letras-correctas{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    height: 70px;
-    color: rgb(109, 221, 126);
-    margin-top: 1%;
-}
-
-#letra{
-    font-size:250%;
-}
-
-#renglon{
-    width: 50px;
-    height: 4px;
-    background: #0A3871;
-}
-
-#letras-incorrectas{
-    height: 30px;
-    color: red;
-    font-size: 150%;
-    margin-top: 0.3%;
-}
-
-#letra-incorrecta{
-    font-size:100%;
+#canvas{
+    border: 1px solid #000000;
 }
 
 #contenedor-botones{
@@ -369,6 +255,7 @@ main{
     width: 688px;
     height: 67px;
     margin-top: 1%;
+    margin-bottom:5%;
 }
 
 #btn-nuevo, #btn-desistir{
@@ -451,27 +338,14 @@ footer{
         height: 4vh;
     }
 
-    #dibujo{
-        height: 370px;
-        margin-top: 6%;
+    #canvas{
+        margin-top:6vh;
+        width: 99vw;
+        height: 60vh;
     }
-   
-    #cabeza{
-        margin-top: 52px;
-    }  
 
     #contenedor-botones{
-        margin-top: 9.5vh;
-    }
-    
-    #letras-correctas{
-        margin-top:4vh;
-        font-size:120%;
-    }
-    
-    #letras-incorrectas{
-        margin-top:1vh;
-        font-size:190%;
+        margin-top: 3.5vh;
     }
 
     #btn-nuevo, #btn-desistir{
@@ -530,23 +404,16 @@ footer{
         margin-bottom: 4%;
     }
 
-    #dibujo{
-        height:370px;
-        margin-top: 6vh;
-    }
-
-    #letras-correctas{
-        margin-top: 4vh;
-    }
-    
-    #letras-incorrectas{
-        margin: 1vh auto;
+    #canvas{
+        margin-top:6vh;
+        width: 98vw;
+        height: 50vh;
     }
     
     #contenedor-botones{
         width: 97vw;
         height: 15vh;
-        margin: 0.5vh auto;
+        margin: 12vh auto;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -559,7 +426,7 @@ footer{
     }
     
     footer{
-        margin-top: 2%;
+        margin-top: 4%;
         text-align: center;
         font-size: 75%;
     }

@@ -22,7 +22,8 @@
             <div class="fondo-oscuro">
                 <div class="popup">
                     <a href="#" class="btn-cerrar-popup"><i class="fa-solid fa-xmark"></i></a>
-                    <input type="text" class="palabra-nueva" placeholder="Ingrese una palabra" autofocus>
+                    <input type="text" class="palabra-nueva" placeholder="Ingrese una palabra">
+                    <ul class="mensaje-error"></ul>
                     <div class="contenedor-aviso">
                         <img src="./assets/Vector.png" alt="Atención" class="atencion"><span class="aviso texto">Solo Mayúsculas</span>
                     </div>
@@ -35,25 +36,7 @@
         </section>
         <section id="container2" class="invisible">
             <div id="dibujo">
-                <div id="soporte" class="detalle-dibujo"></div>
-                <div id="soporte-vertical" class="detalle-dibujo"></div>
-                <div id="brazo-derecho" class="detalle-dibujo"></div>
-                <div id="brazo-izquierdo" class="detalle-dibujo"></div>
-                <div id="pierna-derecha" class="detalle-dibujo"></div>
-                <div id="pierna-izquierda" class="detalle-dibujo"></div>
-                <div id="cuerpo" class="detalle-dibujo"></div>
-                <div id="cabeza" class="detalle-dibujo"></div>
-                <div id="soporte-derecho" class="detalle-dibujo"></div>
-                <div id="soporte-izquierdo" class="detalle-dibujo"></div>
-                <div id="mastil" class="detalle-dibujo"></div>
-                <div id="base" class="detalle-dibujo"></div>
-            </div>
-            <div id="letras-correctas">
-                    <p id="letra" class="texto">A</p>
-                    <div id="renglon"></div>
-            </div>
-            <div id="letras-incorrectas">
-                <p id="letra-incorrecta" class="texto">A</p>
+                <canvas id="canvas" width=1200px height="600px"></canvas>
             </div>
             <div id="contenedor-botones">
                 <button id="btn-nuevo" class="btn-azul">Nuevo juego</button>
@@ -70,6 +53,9 @@
     </main>
     <footer><p>&copy Copyright - Desarrollo por Joel Dupraz Ardiles - Challange N°2 - Oracle Next Education</p></footer>
 
+
+
+<script src="./JS/tablero.js"></script>
 <script src="./JS/jugar.js"></script>    
 <script src="./JS/agregar.js"></script>
 <script src="./JS/nuevo-juego.js"></script>

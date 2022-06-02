@@ -1,6 +1,7 @@
 let btnJugar = document.querySelector(".btn-inicio");
 btnJugar.addEventListener("click", () =>{
     llamarElementos();
+    
 })
 
 function llamarElementos(){

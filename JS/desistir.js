@@ -6,4 +6,7 @@ btnDesistir.addEventListener("click", ()=>{
     let finDeJuego = document.querySelector("#container2");
     finDeJuego.classList.add("invisible");
     finDeJuego.classList.remove("visible");
+    fondoOscuro.classList.remove("active");
+    popup.classList.remove("active");
+    limpiarTableto()
 })
