@@ -4,9 +4,10 @@ var btnCancelar = document.querySelector(".btn-cancelar");
 var fondoOscuro = document.querySelector(".fondo-oscuro");
 var popup = document.querySelector(".popup")
 var btnGuardar = document.querySelector(".btn-guardar");
-var palabras = ["FRONTEND", "BACKEND", "FULLSTACK", "AJAX", "VUE","ANGULAR","ETIQUETA"];
 var input = document.querySelector(".palabra-nueva");
+let imagenError = document.querySelector("#img-error");
 var palabraCoincidencia = false;
+var palabras = ["FRONTEND","BACKEND","FULLSTACK","AJAX","VUE","ANGULAR","ETIQUETA", "ORACLE", "NEXT", "ALURA", "LATAM", "HTML", "CSS", "JAVASCRIPT", "LENGUAJE", "LOGICA", "INSIGNIA", "NOTEBOOK", "PC", "APRENDIZAJE", "PROYECTO", "VICTORIA", "JUEGO", "AHORCADO"];
 
 btnAgregar.addEventListener("click", function(){
     fondoOscuro.classList.add("active");
@@ -16,49 +17,55 @@ btnAgregar.addEventListener("click", function(){
 btnCerrarPopup.addEventListener("click", function(){
     fondoOscuro.classList.remove("active");
     popup.classList.remove("active");
+    limpiarMensajeError();
     input.value = "";
 })
 
 btnCancelar.addEventListener("click", function(){
     fondoOscuro.classList.remove("active");
     popup.classList.remove("active");
+    limpiarMensajeError();
     input.value = "";
 })
+
+ /* guardar palabra en localStorage */
+
+ function guardarLocalStorge(palabra){
+    localStorage.setItem("palabra", palabra);
+}
 
 btnGuardar.addEventListener("click", function (){
     let errores = [];
     let patron = /[A-Z]+/;
     let expresion = new RegExp(patron, "s");
+
     if(input.value == 0){
-        errores.push("Ingrese texto");
+        errores.push("POR FAVOR INGRESAR UN VALOR");
+        imagenError.classList.add("active");
         return mostrarErrores(errores);
     }
     if(!expresion.test(input.value)){
-        errores.push("UPS, solo mayúscula!!");
+        errores.push("INGRESAR SOLO LETRAS MAYÚSCULAS");
+        imagenError.classList.add("active");
         return mostrarErrores(errores); 
     }
     for(let i=0; i<palabras.length;i++){
         if(input.value==palabras[i]){
             palabraCoincidencia = true;
             errores.push("PALABRA INGRESADA REPETIDA, INGRESE OTRA");
-            console.log(errores);
+            imagenError.classList.add("active");
             return mostrarErrores(errores);
         }
     }
     if(palabraCoincidencia == false){
-        palabras.push(input.value);
-        console.log(palabras)
-        llamarElementos();
+        let palabra = input.value;
+        guardarLocalStorge(palabra);
     }
     input.focus();
-    let mensaje = document.querySelector(".mensaje-error")
-    mensaje.innerHTML = "";    
+    limpiarMensajeError()
+    window.location.href = "./HTML/juego.html"    
 })
 
-function verificar(){
-    
-
-}
     function mostrarErrores(errores){
         let ul = document.querySelector(".mensaje-error");
         ul.innerHTML = "";
@@ -68,3 +75,13 @@ function verificar(){
             ul.appendChild(li);
         })
     };
+
+    function limpiarMensajeError(){
+        let mensaje = document.querySelector(".mensaje-error")
+        mensaje.innerHTML = "";
+        imagenError.classList.remove("active");
+    }
+
+   
+
+    

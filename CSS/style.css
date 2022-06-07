@@ -106,7 +106,7 @@ main{
     color: white;
 }
 
-.fondo-oscuro{
+.fondo-oscuro, .fondo-game-over, .fondo-cartel-victoria{
     display: flex;
     visibility: hidden;
     justify-content: center;
@@ -119,11 +119,11 @@ main{
     right: 0;
 }
 
-.fondo-oscuro.active{
+.fondo-oscuro.active, .fondo-game-over.active, .fondo-cartel-victoria.active{
     visibility: visible;
 }
 
-.popup{
+.popup, .cartel-game-over, .cartel-victoria{
     width: 60vw;
     height: 60vh;
     background: #E5E5E5;
@@ -135,7 +135,7 @@ main{
     opacity: 0;
 }
 
-.popup.active{
+.popup.active, .cartel-game-over.active, .cartel-victoria.active{
     opacity: 1;
     transform: scale(1);
 }
@@ -150,7 +150,7 @@ main{
     background: #E5E5E5;;
     font-size:200%;
     text-align: center;
-    margin: 2rem;
+    margin: 1rem;
     border: none;
     font-weight: bold;
     font-style: italic;
@@ -169,10 +169,23 @@ main{
     list-style: none;
 }
 
+#img-error{
+    width: 15vw;
+    height: 25vh;
+    margin: 2vh auto;
+    opacity:0;
+    transform: scale(0.3);
+}
+
+#img-error.active{
+    opacity: 1;
+    transform: scale(1);
+}
+
 .contenedor-aviso{
     width: 10vw;
     height: 2vh;
-    margin: 24vh 0 4vh 14vw;
+    margin: 3vh 0 4vh 14vw;
     padding: 0;
 }
 
@@ -186,49 +199,50 @@ main{
     margin-left: 0.3rem;
 }
 
-.btn-guardar, .btn-cancelar{
+.btn-guardar, .btn-cancelar, .btn-jugar, .btn-salir{
     width: 14vw;
     height: 6vh;
     border-radius: 10px;
     cursor: pointer;
 }
 
-.btn-guardar{
+.btn-guardar, .btn-jugar{
     background-image: linear-gradient(to right, #0A3871 50%, #710a0a 50%);
     background-size: 200%;
     background-repeat: no-repeat;
     background-position: left;
 }
 
-.btn-guardar:hover{
+.btn-guardar:hover, .btn-jugar:hover{
     transition: 0.5s ease;
     background-position: right;
 }
 
-.btn-guardar:active{
+.btn-guardar:active, .btn-jugar:active{
     background: yellow;
     color: black;
     border: 1px solid #000000
 }
 
-.btn-cancelar{
+.btn-cancelar, .btn-salir{
     background-image: linear-gradient(to right, #E5E5E5 50%, #000000 50%);
     background-size: 200%;
     background-repeat: no-repeat;
     background-position: left;
 }
 
-.btn-cancelar:hover{
+.btn-cancelar:hover, .btn-salir:hover{
     transition: 0.5s ease;
     background-position: right;
     color: white;
 }
 
-.btn-cancelar:active{
+.btn-cancelar:active, .btn-salir:active{
     background: red;
 }
 
 #container2{
+    display: flex;
     flex-direction: column;
     align-items: center;
     width: 100vw;
@@ -238,14 +252,36 @@ main{
  #cartel-victoria, #cartel-game-over {
     border: 1px solid #0A3871;
 }
-/* 
-#canvas{
-    width: 80vw;
-    height: 70vh;
-} */
 
 #canvas{
     border: 1px solid #000000;
+}
+
+#titulo-ganar{
+    font-size:350%;
+    text-decoration: underline;
+    font-weight: bold;
+    color: #09f835;
+}
+
+#titulo-game-over{
+    font-size:300%;
+    font-style: italic;
+    text-decoration: underline;
+    color: #f90000;
+}
+
+#img-final, #img-victoria{
+    width:20vw;
+    height:30vh;
+    margin: 2vh auto;
+    border: 4px dashed #000000;
+}
+
+#p{
+    color: red;
+    font-style: italic;
+    margin-bottom: 3vh
 }
 
 #contenedor-botones{
@@ -278,7 +314,7 @@ main{
 #btn-nuevo:active{
     background: #710a0a74;
     transition: 0.3s ease-in-out;
-    transform: scale(1);
+    transform: scale(1.1);
     box-shadow: 5px 5px 4px 3px #3f0000d3;
 }
 
@@ -306,6 +342,15 @@ footer{
     font-size: 80%;
     font-weight: bold;
     font-style: italic;
+}
+
+.link{
+    margin: auto 0.3vw;
+}
+
+.img-link{
+    width: 10px;
+    height: 11.5px;
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1024px){

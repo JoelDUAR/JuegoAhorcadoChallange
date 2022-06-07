@@ -16,7 +16,7 @@
     <main>
         <section id="container" class="visible">
             <div class="container-button">
-                <button class="btn-inicio btn-azul texto">Iniciar juego</button>
+                <a href="./HTML/juego.html"><button class="btn-inicio btn-azul texto">Iniciar juego</button></a>
                 <button class="btn-agregar btn-secundario texto">Agregar nueva palabra</button>
             </div>
             <div class="fondo-oscuro">
@@ -24,6 +24,7 @@
                     <a href="#" class="btn-cerrar-popup"><i class="fa-solid fa-xmark"></i></a>
                     <input type="text" class="palabra-nueva" placeholder="Ingrese una palabra">
                     <ul class="mensaje-error"></ul>
+                    <img src="./assets/Flork - No.jpg" alt="error" id="img-error">
                     <div class="contenedor-aviso">
                         <img src="./assets/Vector.png" alt="Atención" class="atencion"><span class="aviso texto">Solo Mayúsculas</span>
                     </div>
@@ -34,31 +35,15 @@
                 </div>
             </div>
         </section>
-        <section id="container2" class="invisible">
-            <div id="dibujo">
-                <canvas id="canvas" width=1200px height="600px"></canvas>
-            </div>
-            <div id="contenedor-botones">
-                <button id="btn-nuevo" class="btn-azul">Nuevo juego</button>
-                <button id="btn-desistir" class="btn-secundario">Desistir</button>
-            </div>
-            <div id="cartel-victoria" class="invisible">
-                <h1>¡¡¡Felicidades!!!</h1>
-                        <h2>¡¡Ganaste!!</h2>
-            <div id="cartel-game-over" class="invisible">
-                <h1>¡¡Fin del Juego!!</h1>
-                <h2>¿Lo intentas de nuevo?</h2>
-            </div>
-        </section>
     </main>
-    <footer><p>&copy Copyright - Desarrollo por Joel Dupraz Ardiles - Challange N°2 - Oracle Next Education</p></footer>
+    <footer><p>&copy Copyright - Desarrollo por Joel Dupraz Ardiles - Challange N°2 - Oracle Next Education</p>
+        <a href="https://www.linkedin.com/in/joel-dupraz-ardiles/" class="link"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="https://github.com/JoelDUAR" class="link"><i class="fa-brands fa-github"></i></a>
+        <a href="https://app.aluracursos.com/user/joel-dupraz" class="link"><img src="./assets/Logo.png" alt="logo-perfil-alura" class="img-link"></a>
+        
+    </footer>
 
 
-
-<script src="./JS/tablero.js"></script>
-<script src="./JS/jugar.js"></script>    
 <script src="./JS/agregar.js"></script>
-<script src="./JS/nuevo-juego.js"></script>
-<script src="./JS/desistir.js"></script>
 </body>
 </html>
