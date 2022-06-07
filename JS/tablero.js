@@ -12,9 +12,6 @@ document.addEventListener("click", function(){
     input.focus();
     document.addEventListener = (e) => {
     let letra = e.key.toUpperCase();
-        let patronletra = /[a-zA-Z]+/;
-        let expresion = new RegExp(patronletra, "s"); 
-        if(expresion.test(e.key)){
         if(!controlarTeclaPresionada(e.key)){
             if(palabraSecreta.includes(letra)){
              colocarLetraCorrecta(palabraSecreta.indexOf(letra))   
@@ -36,7 +33,7 @@ document.addEventListener("click", function(){
                 dibujarfigura(errores)
             }
         }
-    }
+    
 }
     })
 
