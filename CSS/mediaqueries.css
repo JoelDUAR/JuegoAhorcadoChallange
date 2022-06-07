@@ -1,6 +1,20 @@
 @media only screen and (min-width: 768px) and (max-width: 1024px){
     header{
-        padding: 5% 0 0 4%;
+        padding: 2vh 0 0 4vw;
+    }
+
+    .titulo{
+        width: 30vw;
+        font-size: 150%;
+        margin-right: 3.5vw;
+        padding: 0.5rem;
+        color:white;
+        background: #0a3871;
+        border-radius: 10px;
+    }
+    
+    .em{
+        text-decoration: underline;
     }
 
     .container-button{
@@ -105,6 +119,15 @@
 @media only screen and (min-width: 320px) and (max-width: 767px){
     header{
         padding: 2vh 0 0 3vw;
+    }
+
+    .titulo{
+        font-size: 130%;
+        margin-right: 3vw;
+        padding: 0.5rem;
+        color:white;
+        background: #0a3871;
+        border-radius: 10px;
     }
 
     .btn-inicio{
