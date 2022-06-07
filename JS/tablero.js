@@ -140,65 +140,69 @@ function dibujarfigura(){
         pincel.moveTo(651,20);
         pincel.lineTo(651,70);
         pincel.stroke();  
-        let img1 = new Image();
+       /*  let img1 = new Image();
         img1.src = "../assets/flork pensando.jpg";
         img1.onload = function() {
-            pincel.drawImage(img1,50,50,150,150);
-        }  
+            pincel.drawImage(img1,50,50,290,290); */
+       /*  }   */
     } else if(errores === 6){
         /* Dibujo de cabeza */ 
         pincel.beginPath()
         pincel.arc(651,114,40,0,2*3.14);
         pincel.stroke();
-        let img2 = new Image();
+       /*  let img2 = new Image();
         img2.src = "../assets/flork de brazos cruzados.jpg";
         img2.onload = function() {
-            pincel.drawImage(img2,50,50,150,150);
-        } 
+            pincel.drawImage(img2,50,50,290,290); */
+       /*  }  */
     }else if(errores === 5){
         /* Dibujo de tronco */ 
+        pincel.clearRect(0,0,290,290);
         pincel.beginPath()
         pincel.moveTo(651,155);
         pincel.lineTo(651,280);
         pincel.stroke();
-        let img3 = new Image();
+     /*    let img3 = new Image();
         img3.src = "../assets/flork enojado.jpg";
         img3.onload = function() {
-            pincel.drawImage(img3,50,50,150,150);
-        } 
+            pincel.drawImage(img3,50,150,290,290); */
+     /*    }  */
     }else if(errores === 4){
         /* Dibujo de pierna izquierda */ 
+        pincel.clearRect(0,0,340,440);
         pincel.beginPath()
         pincel.moveTo(651,280);
         pincel.lineTo(600,331);
         pincel.stroke();
-        let img4 = new Image();
+       /*  let img4 = new Image();
         img4.src = "../assets/flork pelos.jpg";
         img4.onload = function() {
-            pincel.drawImage(img4,50,50,200,200);
-        } 
+            pincel.drawImage(img4, 800, 130,290,290); */
+      /*   }  */
     }else if(errores === 3){
         /* Dibujo de pierna derecha */ 
+        pincel.clearRect(800,180,900,250); 
         pincel.beginPath()
         pincel.moveTo(651,280);
         pincel.lineTo(702,331);
         pincel.stroke();
-        let img5 = new Image();
+        /* let img5 = new Image();
         img5.src = "../assets/flork llorando.jpg";
         img5.onload = function() {
-            pincel.drawImage(img5,50,50,150,150);
-        } 
+            pincel.drawImage(img5,70,70,250,250); */
+    /*     }  */
     }else if(errores === 2){
-         /* Dibujo de brazo izquierdo */ 
+         /* Dibujo de brazo izquierdo */
+         pincel.clearRect(70,70,290,290); 
          pincel.beginPath()
          pincel.moveTo(649,175);
          pincel.lineTo(600,226);
          pincel.stroke();
-         let img6 = new Image();
+         /* let img6 = new Image();
          img6.src = "../assets/flork muy triste.jpg";
          img6.onload = function() {
-            pincel.drawImage(img6,50,50,150,150);
-        } 
+            pincel.drawImage(img6,800, 130,290,290); */
+       /*  }  */
     }else if(errores === 1){
         /* Dibujo de brazo derecho */ 
         pincel.beginPath()

@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../CSS/style.css">
+    <link rel="stylesheet" href="../CSS/mediaqueries.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/730791ff8d.js" crossorigin="anonymous"></script>
     <title>Juego del Ahorcado</title>
@@ -17,25 +18,33 @@
         <section id="container2">
             <div id="dibujo">
                 <canvas id="canvas" width=1200px height="600px"></canvas>
+                <div>
+                    <img src="../assets/flork pensando.jpg" alt="pensando" class="img-error1 invisible">
+                    <img src="../assets/flork de brazos cruzados.jpg" alt="brazos-cruzados" class="img-error2 invisible">
+                    <img src="../assets/flork enojado.jpg" alt="enojado" class="img-error3 invisible">
+                    <img src="../assets/flork pelos.jpg" alt="pelos" class="img-error4 invisible">
+                    <img src="../assets/flork llorando.jpg" alt="llorando" class="img-error5 invisible">
+                    <img src="../assets/flork muy triste.jpg" alt="triste" class="img-error6 invisible">
+                </div>
             </div>
             <div id="contenedor-botones">
-                <a href="./juego.html"><button id="btn-nuevo" class="btn-azul">Nuevo juego</button></a>
+                <a href="./juego.html"><button id="btn-nuevo" class=" btn-azul">Nuevo juego</button></a>
                 <a href="../index.html"><button id="btn-desistir" class="btn-secundario">Desistir</button></a>
             </div>
             <div class="fondo-cartel-victoria">
                 <div class="cartel-victoria" class="invisible">
-                    <a href="./juego.html" id="btn-cerrar" class="btn-cerrar-popup"><i class="fa-solid fa-xmark"></i></a>
+                    <a href="../index.html" id="btn-cerrar" class="btn-cerrar-popup"><i class="fa-solid fa-xmark"></i></a>
                     <h1 id="titulo-ganar" class="texto">"Ganaste, felicidades"</h1>
                     <img src="../assets/Flork - Hola.jpg" alt="victoria" id="img-victoria">
-                        <div>
-                            <a href="./juego.html"><button class="btn-guardar texto btn-azul">Volver a Jugar</button></a>
-                            <a href="../index.html"><button class="btn-cancelar texto btn-secundario">Salir</button>
+                        <div id="contenedor-ganar">
+                            <a href="./juego.html"><button class="btn-volver-jugar btn-guardar texto btn-azul">Volver a Jugar</button></a>
+                            <a href="../index.html"><button class="btn-salir btn-cancelar texto btn-secundario">Salir</button>
                         </div>
                 </div>
             </div>
                 <div class="fondo-game-over">
                 <div class="cartel-game-over" class="invisible">
-                    <a href="./juego.html" id="btn-cerrar2" class="btn-cerrar-popup"><i class="fa-solid fa-xmark"></i></a>
+                    <a href="../index.html" id="btn-cerrar2" class="btn-cerrar-popup"><i class="fa-solid fa-xmark"></i></a>
                     <h1 id="titulo-game-over" class="texto">Fin del juego</h1>
                     <img src="../assets/flork ahorcado.jpg" alt="ahorcado" id="img-final">
                     <p id="p" class="texto"></p>

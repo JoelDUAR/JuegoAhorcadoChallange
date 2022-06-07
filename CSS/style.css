@@ -4,7 +4,7 @@
 }
 
 body {
-    background: #E5E5E5;
+    background: rgb(229, 229, 229);
 }
 
 .invisible{
@@ -17,7 +17,7 @@ body {
 
 .btn-azul{
     border-radius: 24px;
-    background: #0A3871;
+    background: #0a3871;
     color: #FFFFFF;
     border: none;
 }
@@ -250,12 +250,9 @@ main{
 }
 
  #cartel-victoria, #cartel-game-over {
-    border: 1px solid #0A3871;
+    border: 1px solid #0a3871;
 }
 
-#canvas{
-    border: 1px solid #000000;
-}
 
 #titulo-ganar{
     font-size:350%;
@@ -275,7 +272,6 @@ main{
     width:20vw;
     height:30vh;
     margin: 2vh auto;
-    border: 4px dashed #000000;
 }
 
 #p{
@@ -351,129 +347,4 @@ footer{
 .img-link{
     width: 10px;
     height: 11.5px;
-}
-
-@media only screen and (min-width: 768px) and (max-width: 1024px){
-    header{
-        padding: 5% 0 0 4%;
-    }
-
-    .btn-inicio{
-        width: 70vw;
-    }
-
-    .popup{
-        width: 75vw;
-        height: 55vh;
-    }
-    
-    .palabra-nueva{
-        width: 90%;
-    }
-    
-    .contenedor-aviso{
-        width: 20vw;
-        height: 2vh;
-        margin: 26vh 0 1.5vh 3.5vw;
-        padding: 0;
-    }
-    
-    .btn-guardar, .btn-cancelar{
-        width: 30vw;
-        height: 4vh;
-    }
-
-    #canvas{
-        margin-top:6vh;
-        width: 99vw;
-        height: 60vh;
-    }
-
-    #contenedor-botones{
-        margin-top: 3.5vh;
-    }
-
-    #btn-nuevo, #btn-desistir{
-        height: 47px;
-        margin-top: 2vh;
-    }
-    
-    #btn-nuevo{
-        margin-right: 1vw;
-    }
-    
-    footer{
-        text-align: center;
-    }
-}
-
-@media only screen and (min-width: 320px) and (max-width: 767px){
-    header{
-        padding: 2vh 0 0 3vw;
-    }
-
-    .btn-inicio{
-        width: 85vw;
-        height: 10vh;
-        margin-bottom: 3vh;
-    }
-
-    .btn-agregar{
-        width: 70vw;
-        height: 6vh;
-    }
-
-    .popup{
-        width: 90vw;
-        height: 63vh;
-    }
-    
-    .palabra-nueva{
-        width: 90%;
-        font-size: 102%;
-        margin: 10% 0 11% 0;
-    }
-    
-    .contenedor-aviso{
-        width: 30vw;
-        height: 2vh;
-        margin: 24vh 0 1.5vh 2vw;
-    }
-    
-    .btn-guardar, .btn-cancelar{
-        width: 80vw;
-        height: 4vh;
-    }
-
-    .btn-guardar{
-        margin-bottom: 4%;
-    }
-
-    #canvas{
-        margin-top:6vh;
-        width: 98vw;
-        height: 50vh;
-    }
-    
-    #contenedor-botones{
-        width: 97vw;
-        height: 15vh;
-        margin: 12vh auto;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    #btn-nuevo, #btn-desistir{
-        width: 97%;
-        height: 7vh;
-        margin: 0.5vh auto
-    }
-    
-    footer{
-        margin-top: 4%;
-        text-align: center;
-        font-size: 75%;
-    }
-
 }
