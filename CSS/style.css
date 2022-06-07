@@ -125,7 +125,7 @@ main{
 
 .popup, .cartel-game-over, .cartel-victoria{
     width: 60vw;
-    height: 60vh;
+    height: 66vh;
     background: #E5E5E5;
     box-shadow: 0px 0px 10px 10px rgba(0, 0, 0, 0.5);
     border-radius: 5px;
@@ -249,20 +249,9 @@ main{
     height: 84.5vh;
 }
 
-#dibujo{
-    display: block;
-}
-
-.input{
-  width: 20vw;
-  height: 2vh; 
-  text-align: center;
-  font-weight: bold; 
-  visibility: hidden;   
-}
-
 #canvas{
-    border: 1px solid #000000
+    width: 80vw;
+    height: 70vh;
 }
 
  #cartel-victoria, #cartel-game-over {
@@ -348,7 +337,7 @@ main{
 footer{
     display:flex;
     width: 100vw;
-    height: 4vh;
+    height: 2vh;
     justify-content: center;
     align-items:center;
     font-size: 80%;
