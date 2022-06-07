@@ -249,6 +249,21 @@ main{
     height: 84.5vh;
 }
 
+#dibujo{
+    display: block;
+}
+
+.input{
+  width: 20vw;
+  height: 2vh; 
+  text-align: center;
+  font-weight: bold;    
+}
+
+#canvas{
+    border: 1px solid #000000
+}
+
  #cartel-victoria, #cartel-game-over {
     border: 1px solid #0a3871;
 }

@@ -7,6 +7,10 @@ let letra = [];
 var palabras = ["FRONTEND","BACKEND","FULLSTACK","AJAX","VUE","ANGULAR","ETIQUETA", "ORACLE", "NEXT", "ALURA", "LATAM", "HTML", "CSS", "JAVASCRIPT", "LENGUAJE", "LOGICA", "INSIGNIA", "NOTEBOOK", "PC", "APRENDIZAJE", "PROYECTO", "VICTORIA", "JUEGO", "AHORCADO"];
 let btnJugar = document.querySelector(".btn-inicio");
 
+document.addEventListener("click", function(){
+    alert("Click")
+    })
+
 /* Pedir y traer palabra del localStorage */
 function traerLocalStorage(){
         localStorage.getItem("palabra");
@@ -212,3 +216,5 @@ function dibujarfigura(){
         finDelJuego();
    }
     }
+
+
