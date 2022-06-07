@@ -36,7 +36,7 @@ btnCancelar.addEventListener("click", function(){
 
 btnGuardar.addEventListener("click", function (){
     let errores = [];
-    let patron = /[A-Z]+/;
+    let patron = /\b[A-Z]+\b/;
     let expresion = new RegExp(patron, "s");
 
     if(input.value == 0){
