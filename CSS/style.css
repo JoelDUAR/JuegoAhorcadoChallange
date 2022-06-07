@@ -257,7 +257,8 @@ main{
   width: 20vw;
   height: 2vh; 
   text-align: center;
-  font-weight: bold;    
+  font-weight: bold; 
+  visibility: hidden;   
 }
 
 #canvas{
