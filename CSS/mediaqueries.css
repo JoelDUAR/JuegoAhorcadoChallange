@@ -120,23 +120,32 @@
 
     .popup{
         width: 90vw;
-        height: 63vh;
+        height: 48vh;
     }
     
     .palabra-nueva{
         width: 90%;
-        font-size: 102%;
-        margin: 10% 0 11% 0;
+        font-size: 120%;
+        margin: 4vh 0 2vh 0;
+    }
+
+    .mensaje-error{
+        font-size: 90%;
+    }
+    
+    #img-error{
+        width: 25vw;
+        height: 15vh;
     }
     
     .contenedor-aviso{
         width: 30vw;
         height: 2vh;
-        margin: 24vh 0 1.5vh 2vw;
+        margin: 2vh 0 1.5vh 2vw;
     }
     
     .btn-guardar, .btn-cancelar{
-        width: 80vw;
+        width: 40vw;
         height: 4vh;
     }
 
@@ -163,6 +172,47 @@
         width: 96vw;
         height: 7vh;
         margin: 0.5vh auto
+    }
+
+    #titulo-ganar{
+        font-size:180%
+    }
+    
+    #titulo-game-over{
+        font-size:170%;
+    }
+    
+    #img-final, #img-victoria{
+        width:30vw;
+        height:20vh;
+        margin: 7vh auto;
+    }
+
+    #img-final{
+        margin: 4vh auto;
+    }
+    
+    #p{
+        margin-bottom: 2vh
+    }
+
+    .btn-jugar, .btn-salir{
+        width: 29vw;  
+        margin-top: 5vh;
+    }
+
+    .btn-jugar{
+        font-size: 12px;
+        
+    }
+
+    .btn-volver-jugar, .btn-salir{
+        width: 23vw;
+    }
+
+    .btn-volver-jugar{
+       margin-right: 1vw;
+       font-size: 10px;
     }
     
     footer{
