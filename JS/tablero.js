@@ -8,7 +8,36 @@ var palabras = ["FRONTEND","BACKEND","FULLSTACK","AJAX","VUE","ANGULAR","ETIQUET
 let btnJugar = document.querySelector(".btn-inicio");
 
 document.addEventListener("click", function(){
-    alert("Click")
+    let input = document.querySelector(".input");
+    input.focus();
+    document.addEventListener = (e) => {
+    let letra = e.key.toUpperCase();
+        let patronletra = /[a-zA-Z]+/;
+        let expresion = new RegExp(patronletra, "s"); 
+        if(expresion.test(e.key)){
+        if(!controlarTeclaPresionada(e.key)){
+            if(palabraSecreta.includes(letra)){
+             colocarLetraCorrecta(palabraSecreta.indexOf(letra))   
+             for(let i = 0; i<palabraSecreta.length; i++){
+                if(palabraSecreta[i]===letra){
+                    escribirLetraCorrecta(i);
+                    ingresos++;
+                }
+                }
+            if(ingresos === palabraSecreta.length){
+                setTimeout(function(){
+                    ganarJuego();
+                },150) 
+            }
+            }else{
+                if(!controlarTeclaPresionada(e.key)) return
+                escribirLetraIncorrecta(letra, errores);
+                colocarLetraIncorrecta(letra);
+                dibujarfigura(errores)
+            }
+        }
+    }
+}
     })
 
 /* Pedir y traer palabra del localStorage */
