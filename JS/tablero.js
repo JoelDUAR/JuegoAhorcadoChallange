@@ -26,7 +26,6 @@ let palabraGuardada = traerLocalStorage();
 
 function sortearPalabra(){
     var palabraSecreta = palabras[Math.floor(Math.random()*palabras.length)];
-    console.log(palabraSecreta);
     return palabraSecreta;
 }
 
@@ -38,7 +37,6 @@ function logicaDelJuego(){
         let expresion = new RegExp(patronletra, "s"); 
         if(expresion.test(e.key)){
         if(!controlarTeclaPresionada(e.key)){
-            console.log(!controlarTeclaPresionada(e.key))
             if(palabraSecreta.includes(letra)){
              colocarLetraCorrecta(palabraSecreta.indexOf(letra))   
              for(let i = 0; i<palabraSecreta.length; i++){
