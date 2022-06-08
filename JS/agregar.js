@@ -9,6 +9,7 @@ let imagenError = document.querySelector("#img-error");
 var palabraCoincidencia = false;
 var palabras = ["FRONTEND","BACKEND","FULLSTACK","AJAX","VUE","ANGULAR","ETIQUETA", "ORACLE", "NEXT", "ALURA", "LATAM", "HTML", "CSS", "JAVASCRIPT", "LENGUAJE", "LOGICA", "INSIGNIA", "NOTEBOOK", "PC", "APRENDIZAJE", "PROYECTO", "VICTORIA", "JUEGO", "AHORCADO"];
 
+
 btnAgregar.addEventListener("click", function(){
     fondoOscuro.classList.add("active");
     popup.classList.add("active");
@@ -19,6 +20,7 @@ btnCerrarPopup.addEventListener("click", function(){
     popup.classList.remove("active");
     limpiarMensajeError();
     input.value = "";
+
 })
 
 btnCancelar.addEventListener("click", function(){
@@ -81,7 +83,5 @@ btnGuardar.addEventListener("click", function (){
         mensaje.innerHTML = "";
         imagenError.classList.remove("active");
     }
-
-   
 
     

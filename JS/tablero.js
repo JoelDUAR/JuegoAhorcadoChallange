@@ -6,6 +6,7 @@ let palabraCorrecta= "";
 let letra = [];
 var palabras = ["FRONTEND","BACKEND","FULLSTACK","AJAX","VUE","ANGULAR","ETIQUETA", "ORACLE", "NEXT", "ALURA", "LATAM", "HTML", "CSS", "JAVASCRIPT", "LENGUAJE", "LOGICA", "INSIGNIA", "NOTEBOOK", "PC", "APRENDIZAJE", "PROYECTO", "VICTORIA", "JUEGO", "AHORCADO"];
 let btnJugar = document.querySelector(".btn-inicio");
+let letrasEspeciales = ["Cancel", "Backspace", "Tab", "Enter", "Shift", "Control", "Alt", "AltGraph", "CapsLock", "Escape", "Blankspace", "PageUp", "PageDown", "End", "Home", "ArrowLeft", "ArrowUp", "ArrowRight", "ArrowDown", "Insert", "Delete", "Meta", "F1", "F2", "F3", "F4", "F5", "F6", "F7", "F8", "F9", "F10", "F11", "F12"];
 
 /* Pedir y traer palabra del localStorage */
 function traerLocalStorage(){
@@ -37,6 +38,7 @@ function logicaDelJuego(){
         let expresion = new RegExp(patronletra, "s"); 
         if(expresion.test(e.key)){
         if(!controlarTeclaPresionada(e.key)){
+            console.log(!controlarTeclaPresionada(e.key))
             if(palabraSecreta.includes(letra)){
              colocarLetraCorrecta(palabraSecreta.indexOf(letra))   
              for(let i = 0; i<palabraSecreta.length; i++){
@@ -106,13 +108,13 @@ function colocarLetraIncorrecta(letter){
 }
 
 function controlarTeclaPresionada(key){
-    if(letra.length < 1 || letra.indexOf(key) < 0){
+    if(letra.length < 1 || letra.indexOf(key) < 0 || letrasEspeciales.includes(key)){
         letra.push(key);
         return false;
     }else{
         letra.push(key);
         return true;
-    }
+    } 
 }
 
 function dibujarfigura(){
