@@ -4,7 +4,7 @@
 }
 
 body {
-    background: rgb(229, 229, 229);
+    background: #e5e5e5;
 }
 
 .invisible{
@@ -38,9 +38,49 @@ header{
     padding: 1.5% 0 0 2%;
 }
 
-#logo-alura{
+#logo-alura, #logo2-alura{
     width: 31px;
     height: 48px;
+}
+
+#btn-nocturno{
+    background: #0a3871;
+    color: white;
+    padding: 0.5%;
+    border-radius: 10px;
+    text-decoration: none;
+}
+
+.fa-solid{
+    margin-left: 0.5vw;
+}
+
+#btn-nocturno:hover{
+    transition: 0.3s ease-in-out;
+    transform: scale(0.9);
+    box-shadow: 5px 5px 4px 3px #1454a1;
+}
+
+#btn-diurno{
+    background: #a9b8c5;
+    color: #0a3871;
+    padding: 0.5%;
+    border-radius: 10px;
+    text-decoration: none;
+}
+
+#btn-diurno:hover{
+    transition: 0.3s ease-in-out;
+    transform: scale(0.9);
+    box-shadow: 5px 5px 4px 3px #83a4c1
+}
+
+#btn-diurno:active, #btn-nocturno:active{
+    transform: scale(1.1);
+}
+
+#sol{
+    color: #0a3871;
 }
 
 .contenedor-titulo{

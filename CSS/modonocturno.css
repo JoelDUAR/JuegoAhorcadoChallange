@@ -1,0 +1,70 @@
+.bodyNocturno, .popupNocturno{
+    background: rgb(40, 40, 40);
+}
+
+.tituloNocturno{
+    margin-right: 1vw;
+    padding: 0.5rem;;
+    color:#0a3871;
+    background: #83a4c1;
+    border-radius: 10px;
+}
+
+.btnNuevoNocturno{
+    width: 217px;
+    height:105px;
+    margin-bottom: 38px;
+    font-size: 110%;
+    background: #e5e5e5;
+    color: #0a3871;
+}
+
+.btnNuevoNocturno, .btnAgregarNocturno{
+    cursor: pointer;
+}
+
+.btnNuevoNocturno:hover{
+    color: white;
+    background: #0a387174;
+    transition: 0.3s ease-in-out;
+    transform: scale(1.2);
+    box-shadow: 5px 5px 4px 3px rgb(0,0,0);
+}
+
+.btnNuevoNocturno:active{
+    background: #710a0a74;
+    transition: 0.3s ease-in-out;
+    transform: scale(0.9);
+    box-shadow: 5px 5px 4px 3px #3f0000d3;
+}
+
+.btnAgregarNocturno{
+    background: #0a3871;
+    color: #e5e5e5;
+    width: 210px;
+    height:67px;
+    font-size: 110%;
+}
+
+.btnAgregarNocturno:hover{
+    background: #0a387124;
+    transition: 0.3s ease-in-out;
+    transform: scale(1.2);
+    box-shadow: 5px 5px 4px 3px rgb(0,0,0);
+}
+.btnAgregarNocturno:active{
+    background: #710a0a74;
+    transition: 0.3s ease-in-out;
+    transform: scale(0.9);
+    box-shadow: 5px 5px 4px 3px #3f0000d3;
+    color: white;
+}
+
+.footerNocturno{
+    color: white;
+    font-weight: normal;
+}
+
+.fa-brands2{
+    color: white;
+}

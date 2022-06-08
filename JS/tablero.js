@@ -12,7 +12,7 @@ let letrasEspeciales = ["Cancel", "Backspace", "Tab", "Enter", "Shift", "Control
 function traerLocalStorage(){
         localStorage.getItem("palabra");
 }
-/*  */
+
 let palabraGuardada = traerLocalStorage();
 
     if(palabraGuardada == null){
@@ -158,7 +158,7 @@ function dibujarfigura(){
         }
     }else if(errores === 5){
         /* Dibujo de tronco */ 
-        pincel.clearRect(0,0,290,290);
+        pincel.clearRect(0,0,350,290);
         pincel.beginPath()
         pincel.moveTo(651,155);
         pincel.lineTo(651,280);
@@ -182,7 +182,7 @@ function dibujarfigura(){
         }
     }else if(errores === 3){
         /* Dibujo de pierna derecha */ 
-        pincel.clearRect(800,180,900,250); 
+        pincel.clearRect(800,120,900,310); 
         pincel.beginPath()
         pincel.moveTo(651,280);
         pincel.lineTo(702,331);

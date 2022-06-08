@@ -6,14 +6,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../CSS/style.css">
     <link rel="stylesheet" href="../CSS/mediaqueries.css">
+    <link rel="stylesheet" href="../CSS/modonocturno.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/730791ff8d.js" crossorigin="anonymous"></script>
     <title>Juego del Ahorcado</title>
 </head>
-<body>
+<body  id="overview">
     <header>
         <img src="../assets/Logo.png" alt="Logo" id="logo-alura">
-        <h1 class="titulo texto">Juego del  <em class="em">ahorcado</em></h1>
+        <img src="../assets/Logo1.png" alt="Logo-,modo-oscuro" id="logo2-alura" class="invisible">
+        <a href="#" id="btn-nocturno" class="texto">Modo Nocturno<i class="fa-solid fa-moon"></i></a>
+        <a href="#" id="btn-diurno" class="texto invisible"> Modo Diurno <i id="sol" class="fa-solid fa-sun"></i></a>
+        <div class="contenedor-titulo">
+           <h1 class="titulo texto">Juego del <em class="em">ahorcado</em></h1>
+        </div>
     </header>
     <main>
         <section id="container2">
@@ -49,13 +55,14 @@
             </div>
         </section>
     </main>
-<footer><p>&copy Copyright - Desarrollo por Joel Dupraz Ardiles - Challange N°2 - Oracle Next Education</p>
-    <a href="https://www.linkedin.com/in/joel-dupraz-ardiles/" class="link" target="blank"><i class="fa-brands fa-linkedin"></i></a>
-    <a href="https://github.com/JoelDUAR" class="link" target="blank"><i class="fa-brands fa-github"></i></a>
-    <a href="https://app.aluracursos.com/user/joel-dupraz" class="link" target="blank"><img src="../assets/Logo.png" alt="logo-perfil-alura" class="img-link"></a>
-    
-</footer>
+    <footer><p id="footer">&copy Copyright - Desarrollo por Joel Dupraz Ardiles - Challange N°2 - Oracle Next Education</p>
+        <a href="https://www.linkedin.com/in/joel-dupraz-ardiles/" class="link" target="blank"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="https://github.com/JoelDUAR" class="link" target="blank"><i class="fa-brands fa-github"></i></a>
+        <a href="https://app.aluracursos.com/user/joel-dupraz" class="link" target="blank" id="logo"><img src="../assets/Logo.png" alt="logo-perfil-alura" class="img-link"></a>
+        <a href="https://app.aluracursos.com/user/joel-dupraz" class="link invisible" target="blank" id="logo2"><img src="../assets/Logo1.png" alt="logo-claro-perfil-alura" class="img-link"></a>
+    </footer>
 
+<script src="../JS/modonocturno-juego.js"></script>
 <script src="../JS/tablero.js"></script>
 <script src="../JS/fin-juego.js"></script>
 <script src="../JS/ganar.js"></script> 
